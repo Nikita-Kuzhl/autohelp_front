@@ -1,0 +1,35 @@
+.header {
+  @apply fixed z-40 w-full md:drop-shadow-lg  left-0 md:p-5;
+
+  .navbar {
+    @apply flex  bg-white justify-between  py-4 px-7 md:px-10;
+
+    .logo {
+      @apply font-bold text-3xl cursor-auto  items-center  font-[EBGaramond];
+    }
+    .nav {
+      @apply md:gap-12 md:flex hidden md:align-middle pt-1 flex-col md:flex-row text-center;
+      .item {
+        @apply text-xl hover:scale-110 hover:text-gray-400 cursor-pointer duration-300;
+      }
+    }
+    .user_action {
+      @apply md:flex hidden justify-between;
+      .cart {
+        @apply flex  cursor-pointer hover:scale-105 hover:-translate-y-1 duration-300 pt-2 md:ml-5 hover:opacity-75;
+        .cart_icon {
+          @apply h-7 w-7;
+        }
+        .cart_span {
+          @apply bg-red-200 rounded-full text-center -mt-3 -ml-3 font-[EBGaramond] h-6 w-6 text-base;
+        }
+      }
+      .auth {
+        @apply md:flex hidden pt-1 cursor-pointer hover:scale-105 hover:-translate-y-1 duration-300 hover:opacity-75;
+        .user_icon {
+          @apply w-7 h-7;
+        }
+      }
+    }
+  }
+}
